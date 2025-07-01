@@ -1,12 +1,21 @@
 package org.example;
 
 public class UnknowCommand implements Command {
-    private String command;
-    public UnknowCommand(String command) {
-        this.command = command;
+    private String input;
+
+    public UnknowCommand(String input) {
+        this.input = input;
+    }
+
+    public String getName() {
+        return "unknown";
+    }
+
+    public String getDescription() {
+        return "неизвестная команда";
     }
 
     public void execute() {
-        System.out.println("Ошибка: неизвестная команда '" + command + "'");
+        System.out.println("Ошибка: неизвестная команда '" + input + "'");
     }
 }
