@@ -15,7 +15,15 @@
         <module>unit3</module>
         <module>unit4</module>
         <module>unit5</module>
+        <module>unit6</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.12</version>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>24</maven.compiler.source>
